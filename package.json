@@ -96,6 +96,7 @@
     "tslib": "2.4.0",
     "uuid": "8.3.2",
     "socket.io-client": "^2.1.1"
+    
   },
   "devDependencies": {
     "@testing-library/react": "13.3.0",
