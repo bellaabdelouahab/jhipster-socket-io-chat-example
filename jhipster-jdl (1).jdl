@@ -1,0 +1,21 @@
+
+
+entity Message {
+    id Long,
+    createdDateTime Instant,
+    messageType MessageType,
+    content String,
+    room String
+    username String
+}
+
+enum MessageType {
+    CLIENT, SERVER
+}
+
+
+// Set pagination options
+paginate Message with infinite-scroll
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

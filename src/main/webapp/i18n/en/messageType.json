@@ -1,0 +1,9 @@
+{
+  "jhipster-socket-io-chat-example2App": {
+    "MessageType": {
+      "null": "",
+      "CLIENT": "CLIENT",
+      "SERVER": "SERVER"
+    }
+  }
+}
