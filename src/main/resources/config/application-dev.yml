@@ -19,6 +19,8 @@ logging:
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
     com.mycompany.myapp: DEBUG
+
+        # TODO: review the following line
 socket-server:
   port: 8080
   host: 192.168.254.112

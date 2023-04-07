@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 import { Translate } from 'react-jhipster';
 import { Row, Col, Alert } from 'reactstrap';
 
+        // TODO: review the following line
 
 const SOCKET_URL = 'http://localhost:8085/ws-message';
 
 import { useAppSelector } from 'app/config/store';
-import Message from '../message/Message';
+import Message from '../messages/Message';
 
 export const Home = () => {
   const account = useAppSelector(state => state.authentication.account);

@@ -13,5 +13,6 @@ import com.mycompany.myapp.domain.Message;
 @SuppressWarnings("unused")
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Long> {
+        // TODO: review the following line
 	List<Message> findAllByRoom(String room);
 }

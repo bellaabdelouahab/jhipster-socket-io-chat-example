@@ -14,6 +14,7 @@ import com.mycompany.myapp.domain.Message;
 
 @Component
 public class SocketModule {
+        // TODO: review the following line
 
     private final Logger log = LoggerFactory.getLogger(SocketModule.class);
     private final SocketIOServer server;

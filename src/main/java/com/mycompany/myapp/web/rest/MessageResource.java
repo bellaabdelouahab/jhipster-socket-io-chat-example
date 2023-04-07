@@ -201,6 +201,7 @@ public class MessageResource {
 
     // get messages by room
     @GetMapping("/messages/room/{room}")
+        // TODO: review the following line
     public ResponseEntity<List<Message>> getMessagesByRoom(@PathVariable String room) {
         log.debug("REST request to get Messages by room : {}", room);
         List<Message> messages = messageRepository.findAllByRoom(room);

@@ -70,6 +70,7 @@ public class SecurityConfiguration {
                 .accessDeniedHandler(problemSupport)
         .and()
             .headers()
+                // TODO: review the following line
                 // .contentSecurityPolicy(jHipsterProperties.getSecurity().getContentSecurityPolicy())
                 // the above line is blocking the socket connection, so what is the correct way to set the CSP?
                 .contentSecurityPolicy("default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' ws://"+host+":"+port+" http://"+host+":"+port+"; frame-src 'self'; object-src 'none';")
